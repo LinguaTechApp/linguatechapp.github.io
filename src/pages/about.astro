@@ -1,1 +1,43 @@
-Hola Mundo
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<div class="container">
+		<div class="content">
+			<h1>About Us</h1>
+			<p>
+				At LinguaTech, we believe in the power of technology to transform the way people learn languages. Our mission is to create innovative tools that make language acquisition more natural, engaging, and accessible for everyone — from beginners to advanced learners.
+			</p>
+			<p>
+				Founded at the intersection of education, linguistics, and technology, Linguatech is dedicated to building products that prioritize real-world comprehension and practical usage. We combine intelligent design, rich media, and data-driven insights to deliver learning experiences that go beyond textbooks and memorization.
+			</p>
+			<p>
+				Our flagship app, LinguaLoop, reflects our core vision: helping learners improve their listening skills through authentic video content and interactive practice. And it’s just the beginning.
+			</p>
+			<p>
+				We’re passionate about helping people connect across cultures, one word at a time.
+			</p>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: calc(100vh - 80px);
+	}
+
+	.content {
+		text-align: center;
+		max-width: 600px;
+		padding: 2rem;
+	}
+
+	.content p {
+		color: #7a7a7a;
+		font-size: 1.25rem;
+	}
+</style>

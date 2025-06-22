@@ -3,7 +3,7 @@
 	<head>
 		<!-- General -->
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Favicon - Order matters! -->
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -12,12 +12,24 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
 
+		<!-- Fonts -->
+		<!-- Remove the Google Fonts link and use system fonts instead -->
+
 		<!-- Meta -->
 		<meta name="generator" content={Astro.generator} />
 		<title>Linguatech</title>
 	</head>
 	<body>
-		<slot />
+		<nav>
+			<a href="/" class={Astro.url.pathname === '/' ? 'active' : ''}>Home</a>
+			<a href="/products" class={Astro.url.pathname === '/products' ? 'active' : ''}>Products</a>
+			<a href="/about" class={Astro.url.pathname === '/about' ? 'active' : ''}>About Us</a>
+			<a href="/contact" class={Astro.url.pathname === '/contact' ? 'active' : ''}>Contact</a>
+		</nav>
+
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
 
@@ -27,5 +39,63 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+		background-color: #F3F4F9;
+		color: #111827;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		gap: 4rem;
+		padding: 1.25rem 0;
+		border-bottom: 1px solid #e5e7eb;
+		position: sticky;
+		top: 0;
+		background: white;
+		z-index: 1000;
+	}
+
+	nav a {
+		text-decoration: none;
+		font-weight: 600;
+		color: #111827;
+		padding-bottom: 0.2rem;
+	}
+
+	nav a:hover,
+	nav a.active {
+		color: #3b82f6;
+		border-bottom: 2px solid #3b82f6;
+	}
+
+	main {
+		min-height: calc(100vh - 80px);
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 4rem 1.5rem;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	p {
+		font-size: 2.25rem;
+		color: #7A7A7A;
+		margin-bottom: 2rem;
+		line-height: 1.6;
+	}
+
+	img {
+		max-width: 300px;
+		height: auto;
+		margin-top: 2rem;
 	}
 </style>

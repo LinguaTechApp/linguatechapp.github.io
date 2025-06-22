@@ -1,29 +1,139 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>LinguaLoop: Practice Listening</title>
-  </head>
-  <body>
-    <main style="font-family: sans-serif; max-width: 720px; margin: auto; padding: 2rem;">
-      <h1>LinguaLoop: Practice Listening</h1>
-      <p>Improve your English and Spanish listening skills with real video content and interactive activities.</p>
 
-      <ul>
-        <li>📺 Dictation & comprehension exercises based on YouTube videos</li>
-        <li>🧠 Boost your vocabulary and understanding with contextual practice</li>
-        <li>🎯 Designed for learners of all levels</li>
-      </ul>
+<Layout>
+	<div class="container">
+		<div class="content">
+			<h1>LinguaLoop: Practice Listening</h1>
+			<p>
+				Improve your English and Spanish listening skills with real video content and interactive activities.
+			</p>
 
-      <p>Available on the App Store.</p>
-      <p><a href="https://apps.apple.com" target="_blank">🔗 Download LinguaLoop</a></p>
+			<div class="features">
+				<div class="feature-item">
+					<h3>📘 Dictation Mode</h3>
+					<p>Watch short video fragments and build the transcript word by word. Train your ear and sharpen your accuracy.</p>
+				</div>
 
-      <footer style="margin-top: 2rem;">
-        <a href="/privacy-policy">Privacy Policy</a> ·
-        <a href="/terms-of-use">Terms of Use</a> ·
-        <a href="/">Back to Linguatech</a>
-      </footer>
-    </main>
-  </body>
-</html>
+				<div class="feature-item">
+					<h3>❓ Quiz Mode</h3>
+					<p>Test your understanding with comprehension questions after each video segment. Perfect for active listening.</p>
+				</div>
+
+				<div class="feature-item">
+					<h3>🎯 For All Levels</h3>
+					<p>Whether you're just starting out or refining fluency, LinguaLoop adapts to your pace and skill level.</p>
+				</div>
+			</div>
+
+			<div class="coming-soon">
+				<h3>Coming Soon to the App Store</h3>
+				<p>Be the first to experience LinguaLoop. Launching soon!</p>
+				<p class="download-placeholder">🔗 Download link coming soon</p>
+			</div>
+
+			<footer>
+				<a href="/lingualoop/privacy-policy">Privacy Policy</a>
+				<a href="/lingualoop/terms-of-use">Terms of Use</a>
+			</footer>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: calc(100vh - 80px);
+	}
+
+	.content {
+		text-align: center;
+		max-width: 600px;
+		padding: 2rem;
+	}
+
+	.content p {
+		color: #7a7a7a;
+		font-size: 1.25rem;
+	}
+
+	.features {
+		text-align: left;
+		margin: 2rem 0;
+	}
+
+	.feature-item {
+		margin-bottom: 2rem;
+		padding: 1.5rem;
+		background: #f8f9fa;
+		border-radius: 8px;
+		border-left: 4px solid #3b82f6;
+	}
+
+	.feature-item h3 {
+		margin: 0 0 0.5rem 0;
+		color: #374151;
+		font-size: 1.25rem;
+	}
+
+	.feature-item p {
+		margin: 0;
+		color: #7A7A7A;
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.coming-soon {
+		margin: 2rem 0;
+		padding: 1.5rem;
+		background: #eff6ff;
+		border-radius: 8px;
+		border: 2px solid #3b82f6;
+	}
+
+	.coming-soon h3 {
+		margin: 0 0 0.5rem 0;
+		color: #1e40af;
+		font-size: 1.25rem;
+	}
+
+	.coming-soon p {
+		margin: 0.5rem 0;
+		color: #374151;
+		font-size: 1rem;
+	}
+
+	.download-placeholder {
+		color: #6b7280 !important;
+		font-style: italic;
+	}
+
+	.download-link {
+		color: #3b82f6;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.download-link:hover {
+		text-decoration: underline;
+	}
+
+	footer {
+		margin-top: 2rem;
+		padding-top: 2rem;
+		border-top: 1px solid #e5e7eb;
+	}
+
+	footer a {
+		color: #7A7A7A;
+		text-decoration: none;
+		margin: 0 1rem;
+	}
+
+	footer a:hover {
+		text-decoration: underline;
+	}
+</style>

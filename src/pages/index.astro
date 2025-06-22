@@ -1,86 +1,42 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Linguatech</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Inter', sans-serif;
-        background-color: #F3F4F9;
-        color: #111827;
-      }
 
-      nav {
-        display: flex;
-        justify-content: center;
-        gap: 4rem;
-        padding: 1.25rem 0;
-        border-bottom: 1px solid #e5e7eb;
-        position: sticky;
-        top: 0;
-        background: white;
-        z-index: 1000;
-      }
+<Layout>
+	<div class="container">
+		<div class="content">
+			<h1>LinguaTech</h1>
+			<p>
+				LinguaTech builds smart tools to help people learn languages through real, interactive content.
+				We design with clarity, simplicity, and purpose.
+			</p>
+			<img src="/lingualoop-logo-512x512.png" alt="LinguaLoop Logo" class="logo" />
+		</div>
+	</div>
+</Layout>
 
-      nav a {
-        text-decoration: none;
-        font-weight: 600;
-        color: #111827;
-        padding-bottom: 0.2rem;
-      }
+<style>
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: calc(100vh - 80px);
+	}
 
-      nav a:hover,
-      nav a.active {
-        color: #3b82f6;
-        border-bottom: 2px solid #3b82f6;
-      }
+	.content {
+		text-align: center;
+		max-width: 600px;
+		padding: 2rem;
+	}
 
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 4rem 1.5rem;
-        text-align: center;
-      }
+	.content p {
+		color: #7a7a7a;
+		font-size: 1.25rem;
+	}
 
-      h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        font-size: 1.125rem;
-        color: #7A7A7A;
-        margin-bottom: 2rem;
-        line-height: 1.6;
-      }
-
-      img {
-        max-width: 300px;
-        height: auto;
-        margin-top: 2rem;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="/" class="active">Home</a>
-      <a href="about">About Us</a>
-      <a href="products">Products</a>
-      <a href="contact">Contact</a>
-    </nav>
-
-    <div class="container">
-      <h1>LinguaTech</h1>
-      <p>
-        LinguaTech builds smart tools to help people learn languages through real, interactive content.
-        We design with clarity, simplicity, and purpose.
-      </p>
-      <img src="/lingualoop-logo-512x512.png" alt="LinguaLoop Logo" />
-    </div>
-  </body>
-</html>
+	.logo {
+		max-width: 200px;
+		width: 100%;
+		height: auto;
+	}
+</style>
