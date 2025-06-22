@@ -17,14 +17,28 @@
 
 		<!-- Meta -->
 		<meta name="generator" content={Astro.generator} />
-		<title>Linguatech</title>
+		<title>LinguaTech</title>
 	</head>
 	<body>
 		<nav>
-			<a href="/" class={Astro.url.pathname === '/' ? 'active' : ''}>Home</a>
-			<a href="/products" class={Astro.url.pathname === '/products' ? 'active' : ''}>Products</a>
-			<a href="/about" class={Astro.url.pathname === '/about' ? 'active' : ''}>About Us</a>
-			<a href="/contact" class={Astro.url.pathname === '/contact' ? 'active' : ''}>Contact</a>
+			<div class="nav-container">
+				<div class="nav-brand">
+					<a href="/">LinguaTech</a>
+				</div>
+
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<div class="nav-menu">
+					<a href="/" class={Astro.url.pathname === '/' ? 'active' : ''}>Home</a>
+					<a href="/products" class={Astro.url.pathname === '/products' ? 'active' : ''}>Products</a>
+					<a href="/about" class={Astro.url.pathname === '/about' ? 'active' : ''}>About Us</a>
+					<a href="/contact" class={Astro.url.pathname === '/contact' ? 'active' : ''}>Contact</a>
+				</div>
+			</div>
 		</nav>
 
 		<main>
@@ -45,10 +59,6 @@
 	}
 
 	nav {
-		display: flex;
-		justify-content: center;
-		gap: 4rem;
-		padding: 1.25rem 0;
 		border-bottom: 1px solid #e5e7eb;
 		position: sticky;
 		top: 0;
@@ -56,21 +66,122 @@
 		z-index: 1000;
 	}
 
-	nav a {
+	.nav-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 70px;
+	}
+
+	.nav-brand a {
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-decoration: none;
+		color: #111827;
+	}
+
+	.nav-menu {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.nav-menu a {
 		text-decoration: none;
 		font-weight: 600;
 		color: #111827;
-		padding-bottom: 0.2rem;
+		padding: 0.5rem 0;
+		transition: color 0.2s ease;
 	}
 
-	nav a:hover,
-	nav a.active {
+	.nav-menu a:hover,
+	.nav-menu a.active {
 		color: #3b82f6;
 		border-bottom: 2px solid #3b82f6;
 	}
 
+	.mobile-menu-toggle {
+		display: none;
+		flex-direction: column;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0.5rem;
+		gap: 4px;
+	}
+
+	.mobile-menu-toggle span {
+		width: 25px;
+		height: 3px;
+		background-color: #111827;
+		transition: all 0.3s ease;
+		border-radius: 2px;
+	}
+
+	/* Mobile styles */
+	@media (max-width: 768px) {
+		.mobile-menu-toggle {
+			display: flex;
+		}
+
+		.nav-menu {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			background: white;
+			flex-direction: column;
+			gap: 0;
+			padding: 1rem 0;
+			border-top: 1px solid #e5e7eb;
+			transform: translateY(-100%);
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease;
+		}
+
+		.nav-menu.open {
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.nav-menu a {
+			width: 100%;
+			padding: 1rem 1.5rem;
+			text-align: center;
+			border-bottom: 1px solid #f3f4f6;
+		}
+
+		.nav-menu a:last-child {
+			border-bottom: none;
+		}
+
+		.nav-menu a:hover,
+		.nav-menu a.active {
+			background-color: #f9fafb;
+			border-bottom: none;
+		}
+
+		/* Hamburger animation */
+		.mobile-menu-toggle.open span:nth-child(1) {
+			transform: rotate(45deg) translate(6px, 6px);
+		}
+
+		.mobile-menu-toggle.open span:nth-child(2) {
+			opacity: 0;
+		}
+
+		.mobile-menu-toggle.open span:nth-child(3) {
+			transform: rotate(-45deg) translate(6px, -6px);
+		}
+	}
+
 	main {
-		min-height: calc(100vh - 80px);
+		min-height: calc(100vh - 70px);
 	}
 
 	.container {
@@ -98,4 +209,47 @@
 		height: auto;
 		margin-top: 2rem;
 	}
+
+	/* Responsive typography */
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+	}
 </style>
+
+<script>
+	// Mobile menu toggle functionality
+	document.addEventListener('DOMContentLoaded', function() {
+		const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+		const navMenu = document.querySelector('.nav-menu');
+
+		if (mobileMenuToggle && navMenu) {
+			mobileMenuToggle.addEventListener('click', function() {
+				mobileMenuToggle.classList.toggle('open');
+				navMenu.classList.toggle('open');
+			});
+
+			// Close menu when clicking on a link
+			const navLinks = navMenu.querySelectorAll('a');
+			navLinks.forEach(link => {
+				link.addEventListener('click', function() {
+					mobileMenuToggle.classList.remove('open');
+					navMenu.classList.remove('open');
+				});
+			});
+
+			// Close menu when clicking outside
+			document.addEventListener('click', function(event) {
+				if (!navMenu.contains(event.target as Node) && !mobileMenuToggle.contains(event.target as Node)) {
+					mobileMenuToggle.classList.remove('open');
+					navMenu.classList.remove('open');
+				}
+			});
+		}
+	});
+</script>
