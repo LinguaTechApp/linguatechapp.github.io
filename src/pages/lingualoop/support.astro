@@ -1,483 +1,575 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <!-- Example: https://help.speak.com/en/ -->
-
 <Layout>
-	<div class="terms-container">
-		<div class="terms-content">
-			<h1>LinguaLoop Support</h1>
+  <div class="terms-container">
+    <div class="terms-content">
+      <h1>LinguaLoop Support</h1>
 
-			<div class="intro">
-				<p>
-					Need help with LinguaLoop? Find answers quickly or reach out to our team below.
-				</p>
-			</div>
+      <div class="intro">
+        <p>
+          Need help with LinguaLoop? Find answers quickly or reach out to our
+          team below.
+        </p>
+      </div>
 
-			<div class="quick-links">
-				<p><strong>Quick links:</strong></p>
-				<p>
-					<a href="#contact-us">Contact Us</a> ·
-					<a href="#frequently-asked-questions">FAQ</a> ·
-					<a href="#legal-links">Legal</a>
-				</p>
-                <!-- <p>
+      <div class="quick-links">
+        <p><strong>Quick links:</strong></p>
+        <p>
+          <a href="#contact-us">Contact Us</a> ·
+          <a href="#frequently-asked-questions">FAQ</a> ·
+          <a href="#legal-links">Legal</a>
+        </p>
+        <!-- <p>
                     Postal address (for official correspondence):<br />
                     Linguatech S.A.<br />
                     Av. Example 1234, Floor 7<br />
                     C1000 CABA – Buenos Aires, Argentina
                 </p> -->
+      </div>
+
+      <hr />
+
+      <div class="terms-section" id="contact-us">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:support@linguatech.com">support@linguatech.com</a
+            ><br />
+            <em
+              >We usually reply within <strong
+                >24 hours (Monday – Friday)</strong
+              >.</em>
+          </li>
+        </ul>
+      </div>
+
+      <div class="terms-section" id="frequently-asked-questions">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-text">
+                <span class="faq-symbol">📱</span>
+                Using LinguaLoop
+              </div>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>What languages are available?</strong></p>
+              <ol>
+                <li>Currently, we offer english and spanish.</li>
+              </ol>
+
+              <p><strong>How to change the language?</strong></p>
+              <ol>
+                <li>Tap the flag icon in the top left corner of the app.</li>
+                <li>Select the language you want to use.</li>
+              </ol>
+
+              <p><strong>What are dictation activities for?</strong></p>
+              <ol>
+                <li>
+                  Dictation activities are designed to help you improve your
+                  listening skills.
+                </li>
+                <li>
+                  You will hear a sentence or phrase and then choose the correct
+                  word from a shuffled list of words.
+                </li>
+              </ol>
+
+              <p><strong>What are quiz activities for?</strong></p>
+              <ol>
+                <li>
+                  Quiz activities are designed to help you improve your
+                  listening skills.
+                </li>
+                <li>
+                  You will hear a short video fragment and then choose the
+                  correct answer from a shuffled list of options.
+                </li>
+              </ol>
+
+              <p><strong>How to create an account?</strong></p>
+              <ol>
+                <li>
+                  You can directly download the LinguaLoop app from the App
+                  Store. Upon opening the app, click 'Get Started' and follow
+                  the prompts.
+                </li>
+                <li>
+                  Once your account is created, you're ready to log in and begin
+                  enhancing your listening skills.
+                </li>
+              </ol>
+
+              <p><strong>What devices are supported?</strong></p>
+              <ol>
+                <li>LinguaLoop is supported on iOS 18.0 and later.</li>
+                <li>Android is not supported yet. We are working on it.</li>
+              </ol>
+
+              <p><strong>How does LinguaLoop curate the content?</strong></p>
+              <ol>
+                <li>
+                  We use a combination of AI and human curation to create the
+                  content. All content is reviewed by a human before it is
+                  published.
+                </li>
+              </ol>
             </div>
+          </div>
 
-			<hr>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-text">
+                <span class="faq-symbol">💳</span>
+                Subscriptions & Billing
+              </div>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>My Membership Status</strong></p>
+              <ol>
+                <li>
+                  To check your membership status, tap the <strong
+                    >Profile</strong
+                  > icon in the bottom right corner of the app.
+                </li>
+                <li>
+                  There are three membership statuses: <strong>Free</strong>, <strong
+                    >Premium</strong
+                  >, and <strong>Trial</strong>.
+                </li>
+                <li>
+                  If you're a premium member, you'll see your membership details
+                  and expiration date.
+                </li>
+                <p>
+                  Premium members have access to all features of the app,
+                  including all language activities.
+                </p>
+                <p>
+                  Free members have access to only the latest language
+                  activities per mode (dictation and quiz) and language.
+                </p>
+              </ol>
 
-			<div class="terms-section" id="contact-us">
-				<h2>Contact Us</h2>
-				<ul>
-					<li><strong>Email:</strong> <a href="mailto:support@linguatech.com">support@linguatech.com</a><br>
-					<em>We usually reply within <strong>24 hours (Monday – Friday)</strong>.</em></li>
-				</ul>
-			</div>
+              <p><strong>How do I cancel my subscription?</strong></p>
+              <ol>
+                <li>
+                  On your iPhone, open <strong
+                    >Settings › Apple ID › Subscriptions</strong
+                  >.
+                </li>
+                <li>
+                  Select <strong>LinguaLoop</strong> and tap <strong
+                    >Cancel</strong
+                  >.<br />
+                  Your access lasts until the current billing period ends.
+                </li>
+              </ol>
+            </div>
+          </div>
 
-			<div class="terms-section" id="frequently-asked-questions">
-				<h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-text">
+                <span class="faq-symbol">👤</span>
+                Account & Sign-In
+              </div>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Can I sign in with Apple?</strong><br />
+                Yes. Tap <strong>Continue with Apple</strong> on the login screen.
+                Email login is available only for beta testers.
+              </p>
+            </div>
+          </div>
 
-				<div class="faq-accordion">
-					<div class="faq-item">
-						<button class="faq-question" aria-expanded="false">
-							<div class="faq-question-text">
-								<span class="faq-symbol">📱</span>
-								Using LinguaLoop
-							</div>
-							<span class="faq-icon">+</span>
-						</button>
-						<div class="faq-answer">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-text">
+                <span class="faq-symbol">🔒</span>
+                Data & Privacy
+              </div>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>What data do you collect?</strong><br />
+                We store your progress, preferred language, and basic device analytics.
+                We <strong>never</strong> store raw audio or personal messages. See
+                our <a href="/lingualoop/privacy-policy">Privacy Policy</a> for full
+                details.
+              </p>
+            </div>
+          </div>
 
-							<p><strong>What languages are available?</strong></p>
-							<ol>
-								<li>Currently, we offer english and spanish.</li>
-							</ol>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-text">
+                <span class="faq-symbol">🔧</span>
+                Troubleshooting
+              </div>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong
+                  >Is there a minimum required App & OS version to use
+                  LinguaLoop on mobile?</strong
+                ><br />
+                To check out the minimum required App & OS version, go to App Store
+                and check the version of the app.
+              </p>
+              <p>
+                As always, we strongly encourage you to update the Speak app to
+                the latest version to take advantage of the most recent features
+                and improvements! If you’re unable to load the app after an app
+                update, please ensure to also update your OS version.
+              </p>
+              <p>
+                <strong>The video keeps buffering. What can I do?</strong><br />
+                First, check your network connection. If the problem persists, close
+                the activity and reopen it it.
+              </p>
+              <p>
+                <strong
+                  >I found poorly worded questions in Quiz activities. What can
+                  I do?</strong
+                ><br />
+                Tap the ⚠️ Report Issue button to report the issue. We'll review
+                it and fix it as soon as possible.
+              </p>
+              <p>
+                <strong
+                  >I found dictation activities where video fragments don't
+                  match the audio properly. What can I do?</strong
+                ><br />
+                Tap the ⚠️ Report Issue button to report the issue. We'll review
+                it and fix it as soon as possible.
+              </p>
+              <p>
+                <strong
+                  >The button for translating the text in the dictation activity
+                  doesn't work. What can I do?</strong
+                ><br />
+                Sometimes the first translation request needs an app relaunch when
+                it's used for the first time. If the problem persists, Tap the ⚠️
+                Report Issue button to report the issue. We'll review it and fix
+                it as soon as possible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-							<p><strong>How to change the language?</strong></p>
-							<ol>
-								<li>Tap the flag icon in the top left corner of the app.</li>
-								<li>Select the language you want to use.</li>
-							</ol>
+      <div class="terms-section" id="legal-links">
+        <h2>Legal Links</h2>
+        <p>
+          <a href="/lingualoop/terms-of-use">Terms & Conditions</a> •
+          <a href="/lingualoop/privacy-policy">Privacy Policy</a>
+        </p>
+      </div>
 
-							<p><strong>What are dictation activities for?</strong></p>
-							<ol>
-								<li>Dictation activities are designed to help you improve your listening skills.</li>
-								<li>You will hear a sentence or phrase and then choose the correct word from a shuffled list of words.</li>
-							</ol>
-
-							<p><strong>What are quiz activities for?</strong></p>
-							<ol>
-								<li>Quiz activities are designed to help you improve your listening skills.</li>
-								<li>You will hear a short video fragment and then choose the correct answer from a shuffled list of options.</li>
-							</ol>
-
-							<p><strong>How to create an account?</strong></p>
-							<ol>
-								<li>You can directly download the LinguaLoop app from the App Store. Upon opening the app, click 'Get Started' and follow the prompts.</li>
-								<li>Once your account is created, you're ready to log in and begin enhancing your listening skills.</li>
-							</ol>
-
-							<p><strong>What devices are supported?</strong></p>
-							<ol>
-								<li>LinguaLoop is supported on iOS 18.0 and later.</li>
-								<li>Android is not supported yet. We are working on it.</li>
-							</ol>
-
-							<p><strong>How does LinguaLoop curate the content?</strong></p>
-							<ol>
-								<li>We use a combination of AI and human curation to create the content. All content is reviewed by a human before it is published.</li>
-							</ol>
-
-						</div>
-					</div>
-
-					<div class="faq-item">
-						<button class="faq-question" aria-expanded="false">
-							<div class="faq-question-text">
-								<span class="faq-symbol">💳</span>
-								Subscriptions & Billing
-							</div>
-							<span class="faq-icon">+</span>
-						</button>
-						<div class="faq-answer">
-
-
-							<p><strong>My Membership Status</strong></p>
-							<ol>
-								<li>To check your membership status, tap the <strong>Profile</strong> icon in the bottom right corner of the app.</li>
-								<li>There are three membership statuses: <strong>Free</strong>, <strong>Premium</strong>, and <strong>Trial</strong>.</li>
-								<li>If you're a premium member, you'll see your membership details and expiration date.</li>
-								<p>Premium members have access to all features of the app, including all language activities.</p>
-								<p>Free members have access to only the latest language activities per mode (dictation and quiz) and language.</p>
-							</ol>
-
-							<p><strong>How do I cancel my subscription?</strong></p>
-							<ol>
-								<li>On your iPhone, open <strong>Settings › Apple ID › Subscriptions</strong>.</li>
-								<li>Select <strong>LinguaLoop</strong> and tap <strong>Cancel</strong>.<br>
-								Your access lasts until the current billing period ends.</li>
-							</ol>
-						</div>
-					</div>
-
-					<div class="faq-item">
-						<button class="faq-question" aria-expanded="false">
-							<div class="faq-question-text">
-								<span class="faq-symbol">👤</span>
-								Account & Sign-In
-							</div>
-							<span class="faq-icon">+</span>
-						</button>
-						<div class="faq-answer">
-							<p><strong>Can I sign in with Apple?</strong><br>
-							Yes. Tap <strong>Continue with Apple</strong> on the login screen. Email login is available only for beta testers.</p>
-						</div>
-					</div>
-
-					<div class="faq-item">
-						<button class="faq-question" aria-expanded="false">
-							<div class="faq-question-text">
-								<span class="faq-symbol">🔒</span>
-								Data & Privacy
-							</div>
-							<span class="faq-icon">+</span>
-						</button>
-						<div class="faq-answer">
-							<p><strong>What data do you collect?</strong><br>
-							We store your progress, preferred language, and basic device analytics. We <strong>never</strong> store raw audio or personal messages. See our <a href="/lingualoop/privacy-policy">Privacy Policy</a> for full details.</p>
-						</div>
-					</div>
-
-					<div class="faq-item">
-						<button class="faq-question" aria-expanded="false">
-							<div class="faq-question-text">
-								<span class="faq-symbol">🔧</span>
-								Troubleshooting
-							</div>
-							<span class="faq-icon">+</span>
-						</button>
-						<div class="faq-answer">
-							<p><strong>Is there a minimum required App & OS version to use LinguaLoop on mobile?</strong><br>
-							To check out the minimum required App & OS version, go to App Store and check the version of the app.</p>
-							<p>As always, we strongly encourage you to update the Speak app to the latest version to take advantage of the most recent features and improvements! If you’re unable to load the app after an app update, please ensure to also update your OS version.</p>
-							<p><strong>The video keeps buffering. What can I do?</strong><br>
-								First, check your network connection. If the problem persists, close the activity and reopen it it.</p>
-								<p><strong>I found poorly worded questions in Quiz activities. What can I do?</strong><br>
-								Tap the ⚠️ Report Issue button to report the issue. We'll review it and fix it as soon as possible.</p>
-								<p><strong>I found dictation activities where video fragments don't match the audio properly. What can I do?</strong><br>
-								Tap the ⚠️ Report Issue button to report the issue. We'll review it and fix it as soon as possible.</p>
-								<p><strong>The button for translating the text in the dictation activity doesn't work. What can I do?</strong><br>
-								Sometimes the first translation request needs an app relaunch when it's used for the first time. If the problem persists, Tap the ⚠️ Report Issue button to report the issue. We'll review it and fix it as soon as possible.</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="terms-section" id="legal-links">
-				<h2>Legal Links</h2>
-				<p>
-					<a href="/lingualoop/terms-of-use">Terms & Conditions</a> •
-					<a href="/lingualoop/privacy-policy">Privacy Policy</a>
-				</p>
-			</div>
-
-			<div class="contact-section">
-				<p>© 2025 Linguatech – All rights reserved.</p>
-			</div>
-		</div>
-	</div>
+      <div class="contact-section">
+        <p>© 2025 Linguatech – All rights reserved.</p>
+      </div>
+    </div>
+  </div>
 </Layout>
 
 <style>
-	.terms-container {
-		max-width: 800px;
-		margin: 0 auto;
-		padding: 2rem 1.5rem;
-		background: white;
-		border-radius: 12px;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-	}
+  .terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-	.terms-content {
-		text-align: left;
-	}
+  .terms-content {
+    text-align: left;
+  }
 
-	h1 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		color: #111827;
-		margin-bottom: 0.5rem;
-		text-align: center;
-	}
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
 
-	.intro {
-		background: #f8fafc;
-		padding: 1.5rem;
-		border-radius: 8px;
-		border-left: 4px solid #3b82f6;
-		margin-bottom: 2rem;
-	}
+  .intro {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+    margin-bottom: 2rem;
+  }
 
-	.intro p {
-		margin: 0;
-		font-size: 1rem;
-		line-height: 1.6;
-		color: #374151;
-	}
+  .intro p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+  }
 
-	.quick-links {
-		margin-bottom: 2rem;
-	}
+  .quick-links {
+    margin-bottom: 2rem;
+  }
 
-	.quick-links p {
-		font-size: 1rem;
-		line-height: 1.6;
-		color: #374151;
-		margin-bottom: 0.5rem;
-	}
+  .quick-links p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
 
-	.quick-links strong {
-		font-weight: 600;
-		color: #111827;
-	}
+  .quick-links strong {
+    font-weight: 600;
+    color: #111827;
+  }
 
-	hr {
-		border: none;
-		border-top: 2px solid #e5e7eb;
-		margin: 2rem 0;
-	}
+  hr {
+    border: none;
+    border-top: 2px solid #e5e7eb;
+    margin: 2rem 0;
+  }
 
-	.terms-section {
-		margin-bottom: 2rem;
-		scroll-margin-top: 100px;
-	}
+  .terms-section {
+    margin-bottom: 2rem;
+    scroll-margin-top: 100px;
+  }
 
-	.terms-section h2 {
-		font-size: 1.25rem;
-		font-weight: 600;
-		color: #111827;
-		margin-bottom: 0.75rem;
-		border-bottom: 2px solid #e5e7eb;
-		padding-bottom: 0.5rem;
-	}
+  .terms-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+  }
 
-	.terms-section h3 {
-		font-size: 1.1rem;
-		font-weight: 600;
-		color: #111827;
-		margin-bottom: 0.5rem;
-		margin-top: 1.5rem;
-	}
+  .terms-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
 
-	.terms-section p {
-		font-size: 1rem;
-		line-height: 1.6;
-		color: #374151;
-		margin-bottom: 1rem;
-	}
+  .terms-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 1rem;
+  }
 
-	.terms-section ul {
-		margin: 0.5rem 0;
-		padding-left: 1.5rem;
-	}
+  .terms-section ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
 
-	.terms-section ol {
-		margin: 0.5rem 0;
-		padding-left: 1.5rem;
-	}
+  .terms-section ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
 
-	.terms-section li {
-		font-size: 1rem;
-		line-height: 1.6;
-		color: #374151;
-		margin-bottom: 0.5rem;
-	}
+  .terms-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
 
-	.terms-section strong {
-		font-weight: 600;
-		color: #111827;
-	}
+  .terms-section strong {
+    font-weight: 600;
+    color: #111827;
+  }
 
-	.terms-section em {
-		font-style: italic;
-		color: #6b7280;
-	}
+  .terms-section em {
+    font-style: italic;
+    color: #6b7280;
+  }
 
-	.faq-accordion {
-		margin-top: 1rem;
-	}
+  .faq-accordion {
+    margin-top: 1rem;
+  }
 
-	.faq-item {
-		border: 1px solid #e5e7eb;
-		border-radius: 8px;
-		margin-bottom: 0.5rem;
-		overflow: hidden;
-	}
+  .faq-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
 
-	.faq-item:last-child {
-		margin-bottom: 0;
-	}
+  .faq-item:last-child {
+    margin-bottom: 0;
+  }
 
-	.faq-question {
-		width: 100%;
-		padding: 1rem 1.5rem;
-		background: #f9fafb;
-		border: none;
-		text-align: left;
-		font-size: 1.1rem;
-		font-weight: 600;
-		color: #111827;
-		cursor: pointer;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		transition: background-color 0.2s ease;
-	}
+  .faq-question {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: #f9fafb;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+  }
 
-	.faq-question-text {
-		display: flex;
-		align-items: center;
-		flex: 1;
-	}
+  .faq-question-text {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
 
-	.faq-symbol {
-		margin-right: 0.75rem;
-		font-size: 1.2rem;
-		opacity: 0.8;
-	}
+  .faq-symbol {
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
 
-	.faq-question[aria-expanded="true"] .faq-symbol {
-		opacity: 1;
-	}
+  .faq-question[aria-expanded="true"] .faq-symbol {
+    opacity: 1;
+  }
 
-	.faq-question:hover {
-		background: #f3f4f6;
-	}
+  .faq-question:hover {
+    background: #f3f4f6;
+  }
 
-	.faq-question[aria-expanded="true"] {
-		background: #3b82f6;
-		color: white;
-	}
+  .faq-question[aria-expanded="true"] {
+    background: #3b82f6;
+    color: white;
+  }
 
-	.faq-icon {
-		font-size: 1.5rem;
-		font-weight: 400;
-		transition: transform 0.2s ease;
-	}
+  .faq-icon {
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: transform 0.2s ease;
+  }
 
-	.faq-question[aria-expanded="true"] .faq-icon {
-		transform: rotate(45deg);
-	}
+  .faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+  }
 
-	.faq-answer {
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.3s ease;
-		background: white;
-	}
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: white;
+  }
 
-	.faq-answer.expanded {
-		max-height: 1000px;
-		padding: 1rem 1.5rem;
-	}
+  .faq-answer.expanded {
+    max-height: 1000px;
+    padding: 1rem 1.5rem;
+  }
 
-	.faq-answer p {
-		margin-bottom: 1rem;
-	}
+  .faq-answer p {
+    margin-bottom: 1rem;
+  }
 
-	.faq-answer p:last-child {
-		margin-bottom: 0;
-	}
+  .faq-answer p:last-child {
+    margin-bottom: 0;
+  }
 
-	.faq-answer ol {
-		margin: 0.5rem 0;
-		padding-left: 1.5rem;
-	}
+  .faq-answer ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
 
-	.faq-answer li {
-		font-size: 1rem;
-		line-height: 1.6;
-		color: #374151;
-		margin-bottom: 0.5rem;
-	}
+  .faq-answer li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
 
-	.contact-section {
-		margin-top: 3rem;
-		padding-top: 2rem;
-		border-top: 2px solid #e5e7eb;
-		text-align: center;
-	}
+  .contact-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e5e7eb;
+    text-align: center;
+  }
 
-	.contact-section p {
-		margin: 0;
-		color: #6b7280;
-		font-size: 0.9rem;
-	}
+  .contact-section p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
 
-	a {
-		color: #3b82f6;
-		text-decoration: none;
-	}
+  a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
 
-	a:hover {
-		text-decoration: underline;
-	}
+  a:hover {
+    text-decoration: underline;
+  }
 
-	@media (max-width: 768px) {
-		.terms-container {
-			margin: 1rem;
-			padding: 1.5rem 1rem;
-		}
+  @media (max-width: 768px) {
+    .terms-container {
+      margin: 1rem;
+      padding: 1.5rem 1rem;
+    }
 
-		h1 {
-			font-size: 2rem;
-		}
+    h1 {
+      font-size: 2rem;
+    }
 
-		.terms-section h2 {
-			font-size: 1.1rem;
-		}
+    .terms-section h2 {
+      font-size: 1.1rem;
+    }
 
-		.terms-section h3 {
-			font-size: 1rem;
-		}
-	}
+    .terms-section h3 {
+      font-size: 1rem;
+    }
+  }
 </style>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-		const faqQuestions = document.querySelectorAll('.faq-question');
+  document.addEventListener("DOMContentLoaded", function () {
+    const faqQuestions = document.querySelectorAll(".faq-question");
 
-		faqQuestions.forEach(question => {
-			question.addEventListener('click', () => {
-				const isExpanded = question.getAttribute('aria-expanded') === 'true';
-				const answer = question.nextElementSibling;
+    faqQuestions.forEach((question) => {
+      question.addEventListener("click", () => {
+        const isExpanded = question.getAttribute("aria-expanded") === "true";
+        const answer = question.nextElementSibling;
 
-				// Close all other FAQ items
-				faqQuestions.forEach(otherQuestion => {
-					if (otherQuestion !== question) {
-						otherQuestion.setAttribute('aria-expanded', 'false');
-						const otherAnswer = otherQuestion.nextElementSibling;
-						if (otherAnswer) {
-							otherAnswer.classList.remove('expanded');
-						}
-					}
-				});
+        // Close all other FAQ items
+        faqQuestions.forEach((otherQuestion) => {
+          if (otherQuestion !== question) {
+            otherQuestion.setAttribute("aria-expanded", "false");
+            const otherAnswer = otherQuestion.nextElementSibling;
+            if (otherAnswer) {
+              otherAnswer.classList.remove("expanded");
+            }
+          }
+        });
 
-				// Toggle current FAQ item
-				question.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false');
-				if (answer) {
-					answer.classList.toggle('expanded');
-				}
-			});
-		});
-	});
+        // Toggle current FAQ item
+        question.setAttribute("aria-expanded", !isExpanded ? "true" : "false");
+        if (answer) {
+          answer.classList.toggle("expanded");
+        }
+      });
+    });
+  });
 </script>
