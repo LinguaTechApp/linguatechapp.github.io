@@ -42,7 +42,8 @@ import Layout from "../../layouts/Layout.astro";
             <em
               >We usually reply within <strong
                 >24 hours (Monday – Friday)</strong
-              >.</em>
+              >.</em
+            >
           </li>
         </ul>
       </div>
@@ -52,140 +53,115 @@ import Layout from "../../layouts/Layout.astro";
 
         <div class="faq-accordion">
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-using-lingualoop">
               <div class="faq-question-text">
                 <span class="faq-symbol">📱</span>
                 Using LinguaLoop
               </div>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+            <div id="faq-using-lingualoop" class="faq-answer" hidden>
               <p><strong>What languages are available?</strong></p>
-              <ol>
-                <li>Currently, we offer english and spanish.</li>
-              </ol>
+              <p>
+                Currently, we offer <strong>English</strong> and <strong
+                  >Spanish</strong
+                >.
+              </p>
 
               <p><strong>How to change the language?</strong></p>
-              <ol>
-                <li>Tap the flag icon in the top left corner of the app.</li>
-                <li>Select the language you want to use.</li>
-              </ol>
+              <p>
+                Tap the flag icon in the top left corner of the app. Select the
+                language you want to use.
+              </p>
 
               <p><strong>What are dictation activities for?</strong></p>
-              <ol>
-                <li>
-                  Dictation activities are designed to help you improve your
-                  listening skills.
-                </li>
-                <li>
-                  You will hear a sentence or phrase and then choose the correct
-                  word from a shuffled list of words.
-                </li>
-              </ol>
+              <p>
+                Dictation activities are designed to help you improve your
+                listening skills. You will hear a sentence or phrase and then
+                choose the correct word from a randomized list of words.
+              </p>
 
               <p><strong>What are quiz activities for?</strong></p>
-              <ol>
-                <li>
-                  Quiz activities are designed to help you improve your
-                  listening skills.
-                </li>
-                <li>
-                  You will hear a short video fragment and then choose the
-                  correct answer from a shuffled list of options.
-                </li>
-              </ol>
+              <p>
+                Quiz activities are designed to help you improve your listening
+                skills. You will hear a short video fragment and then choose the
+                correct answer from a randomized list of options.
+              </p>
 
               <p><strong>How to create an account?</strong></p>
-              <ol>
-                <li>
-                  You can directly download the LinguaLoop app from the App
-                  Store. Upon opening the app, click 'Get Started' and follow
-                  the prompts.
-                </li>
-                <li>
-                  Once your account is created, you're ready to log in and begin
-                  enhancing your listening skills.
-                </li>
-              </ol>
+              <p>
+                You can directly download the LinguaLoop app from the App Store.
+                Upon opening the app, click <strong>Get Started</strong> and follow
+                the prompts.
+              </p>
+              <p>
+                Once your account is created, you're ready to log in and begin
+                enhancing your listening skills.
+              </p>
 
               <p><strong>What devices are supported?</strong></p>
-              <ol>
-                <li>LinguaLoop is supported on iOS 18.0 and later.</li>
-                <li>Android is not supported yet. We are working on it.</li>
-              </ol>
+              <p>LinguaLoop is supported on iOS 18.0 and later.</p>
+              <p>Android is not supported yet. We're working on it.</p>
 
               <p><strong>How does LinguaLoop curate the content?</strong></p>
-              <ol>
-                <li>
-                  We use a combination of AI and human curation to create the
-                  content. All content is reviewed by a human before it is
-                  published.
-                </li>
-              </ol>
+              <p>
+                We use a combination of AI and human curation to create the
+                content. It's important to note that all content is reviewed by
+                a human before it is published.
+              </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-subscriptions-billing">
               <div class="faq-question-text">
                 <span class="faq-symbol">💳</span>
                 Subscriptions & Billing
               </div>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
-              <p><strong>My Membership Status</strong></p>
-              <ol>
-                <li>
-                  To check your membership status, tap the <strong
-                    >Profile</strong
-                  > icon in the bottom right corner of the app.
-                </li>
-                <li>
-                  There are three membership statuses: <strong>Free</strong>, <strong
-                    >Premium</strong
-                  >, and <strong>Trial</strong>.
-                </li>
-                <li>
-                  If you're a premium member, you'll see your membership details
-                  and expiration date.
-                </li>
-                <p>
-                  Premium members have access to all features of the app,
-                  including all language activities.
-                </p>
-                <p>
-                  Free members have access to only the latest language
-                  activities per mode (dictation and quiz) and language.
-                </p>
-              </ol>
+            <div id="faq-subscriptions-billing" class="faq-answer" hidden>
+              <p><strong>How to check my membership status?</strong></p>
+              <p>
+                To check your membership status, tap the <strong>Profile</strong
+                > icon in the bottom right corner of the app.
+              </p>
+              <p>
+                There are three membership statuses: <strong>Free</strong>, <strong
+                  >Premium</strong
+                >, and <strong>Trial</strong>.
+              </p>
+              <p>
+                If you're a premium member, you'll see your membership details
+                and expiration date.
+              </p>
+              <p>
+                Premium members have access to all features of the app,
+                including all language activities.
+              </p>
+              <p>
+                Free members have access to only the latest uploaded activity
+                per mode (dictation and quiz) and language.
+              </p>
 
               <p><strong>How do I cancel my subscription?</strong></p>
-              <ol>
-                <li>
-                  On your iPhone, open <strong
-                    >Settings › Apple ID › Subscriptions</strong
-                  >.
-                </li>
-                <li>
-                  Select <strong>LinguaLoop</strong> and tap <strong
-                    >Cancel</strong
-                  >.<br />
-                  Your access lasts until the current billing period ends.
-                </li>
-              </ol>
+              <p>
+                Open the app, go to Profile → Setting → Manage Susciption →
+                Manage Susciption → Cancel Subscription.
+              </p>
+              <p>Your access lasts until the current billing period ends.</p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-account-sign-in">
               <div class="faq-question-text">
                 <span class="faq-symbol">👤</span>
                 Account & Sign-In
               </div>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+            <div id="faq-account-sign-in" class="faq-answer" hidden>
               <p>
                 <strong>Can I sign in with Apple?</strong><br />
                 Yes. Tap <strong>Continue with Apple</strong> on the login screen.
@@ -195,67 +171,78 @@ import Layout from "../../layouts/Layout.astro";
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-data-privacy"
+              >
+
               <div class="faq-question-text">
-                <span class="faq-symbol">🔒</span>
-                Data & Privacy
+                <span class="faq-symbol" role="img" aria-label="Data & Privacy">🔒</span>
+                Data &amp; Privacy
               </div>
-              <span class="faq-icon">+</span>
+
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+
+            <div id="faq-data-privacy" class="faq-answer" hidden>
               <p>
                 <strong>What data do you collect?</strong><br />
                 We store your progress, preferred language, and basic device analytics.
-                We <strong>never</strong> store raw audio or personal messages. See
-                our <a href="/lingualoop/privacy-policy">Privacy Policy</a> for full
-                details.
+                We <strong>never</strong> store raw audio or personal messages.
+                See our <a href="/lingualoop/privacy-policy">Privacy&nbsp;Policy</a> for full details.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-troubleshooting">
               <div class="faq-question-text">
                 <span class="faq-symbol">🔧</span>
                 Troubleshooting
               </div>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+            <div id="faq-troubleshooting" class="faq-answer" hidden>
               <p>
                 <strong
                   >Is there a minimum required App & OS version to use
                   LinguaLoop on mobile?</strong
                 ><br />
-                To check out the minimum required App & OS version, go to App Store
-                and check the version of the app.
+                To see the minimum app and OS version, open the App Store listing
+                and scroll to <strong>Compatibility</strong>.
               </p>
               <p>
-                As always, we strongly encourage you to update the Speak app to
-                the latest version to take advantage of the most recent features
-                and improvements! If you’re unable to load the app after an app
-                update, please ensure to also update your OS version.
+                As always, we strongly encourage you to update the LinguaLoop
+                app to the latest version to take advantage of the most recent
+                features and improvements! If you're unable to load the app
+                after an app update, please ensure to also update your OS
+                version.
               </p>
               <p>
                 <strong>The video keeps buffering. What can I do?</strong><br />
                 First, check your network connection. If the problem persists, close
-                the activity and reopen it it.
+                the activity and reopen it.
               </p>
               <p>
                 <strong
                   >I found poorly worded questions in Quiz activities. What can
                   I do?</strong
                 ><br />
-                Tap the ⚠️ Report Issue button to report the issue. We'll review
-                it and fix it as soon as possible.
+                Tap the <button class="report-issue" aria-label="Report issue" type="button">
+                  <span role="img" aria-label="Report issue">⚠️</span>
+                </button> Report Issue button to report the issue. We'll review it
+                and fix it as soon as possible. If you're not logged in, you'll be asked to log in first.
               </p>
               <p>
                 <strong
                   >I found dictation activities where video fragments don't
                   match the audio properly. What can I do?</strong
                 ><br />
-                Tap the ⚠️ Report Issue button to report the issue. We'll review
-                it and fix it as soon as possible.
+                Tap the <button class="report-issue" aria-label="Report issue" type="button">
+                  <span role="img" aria-label="Report issue">⚠️</span>
+                </button> Report Issue button to report the issue. We'll review it
+                and fix it as soon as possible.
               </p>
               <p>
                 <strong
@@ -263,7 +250,11 @@ import Layout from "../../layouts/Layout.astro";
                   doesn't work. What can I do?</strong
                 ><br />
                 Sometimes the first translation request needs an app relaunch when
-                it's used for the first time. If the problem persists, Tap the ⚠️
+                it's used for the first time. If the problem persists, tap the <button
+                  class="report-issue" aria-label="Report issue" type="button"
+                >
+                  <span role="img" aria-label="Report issue">⚠️</span>
+                </button>
                 Report Issue button to report the issue. We'll review it and fix
                 it as soon as possible.
               </p>
@@ -278,10 +269,6 @@ import Layout from "../../layouts/Layout.astro";
           <a href="/lingualoop/terms-of-use">Terms & Conditions</a> •
           <a href="/lingualoop/privacy-policy">Privacy Policy</a>
         </p>
-      </div>
-
-      <div class="contact-section">
-        <p>© 2025 Linguatech – All rights reserved.</p>
       </div>
     </div>
   </div>
@@ -551,15 +538,18 @@ import Layout from "../../layouts/Layout.astro";
     faqQuestions.forEach((question) => {
       question.addEventListener("click", () => {
         const isExpanded = question.getAttribute("aria-expanded") === "true";
-        const answer = question.nextElementSibling;
+        const controlsId = question.getAttribute("aria-controls");
+        const answer = controlsId ? document.getElementById(controlsId) : question.nextElementSibling;
 
         // Close all other FAQ items
         faqQuestions.forEach((otherQuestion) => {
           if (otherQuestion !== question) {
             otherQuestion.setAttribute("aria-expanded", "false");
-            const otherAnswer = otherQuestion.nextElementSibling;
+            const otherControlsId = otherQuestion.getAttribute("aria-controls");
+            const otherAnswer = otherControlsId ? document.getElementById(otherControlsId) : otherQuestion.nextElementSibling;
             if (otherAnswer) {
               otherAnswer.classList.remove("expanded");
+              (otherAnswer as HTMLElement).hidden = true;
             }
           }
         });
@@ -568,6 +558,7 @@ import Layout from "../../layouts/Layout.astro";
         question.setAttribute("aria-expanded", !isExpanded ? "true" : "false");
         if (answer) {
           answer.classList.toggle("expanded");
+          (answer as HTMLElement).hidden = isExpanded; // Hide when closing, show when opening
         }
       });
     });
