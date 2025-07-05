@@ -146,8 +146,8 @@ import Layout from "../../layouts/Layout.astro";
 
               <p><strong>How do I cancel my subscription?</strong></p>
               <p>
-                Open the app, go to Profile → Setting → Manage Susciption →
-                Manage Susciption → Cancel Subscription.
+                Open the app, go to Profile → Setting → Manage Subscription →
+                Manage Subscription → Cancel Subscription.
               </p>
               <p>Your access lasts until the current billing period ends.</p>
             </div>
@@ -533,6 +533,11 @@ import Layout from "../../layouts/Layout.astro";
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    // Set aria-hidden on FAQ icons to prevent screen readers from announcing them
+    document.querySelectorAll('.faq-icon').forEach(icon => {
+      icon.setAttribute('aria-hidden', 'true');
+    });
+
     const faqQuestions = document.querySelectorAll(".faq-question");
 
     faqQuestions.forEach((question) => {
