@@ -18,42 +18,24 @@ import Layout from "../../layouts/Layout.astro";
       <div class="quick-links">
         <p><strong>Quick links:</strong></p>
         <p>
-          <a href="#contact-us">Contact Us</a> ·
           <a href="#frequently-asked-questions">FAQ</a> ·
+          <a href="#contact-us">Contact Us</a> ·
           <a href="#legal-links">Legal</a>
         </p>
-        <!-- <p>
-                    Postal address (for official correspondence):<br />
-                    Linguatech S.A.<br />
-                    Av. Example 1234, Floor 7<br />
-                    C1000 CABA – Buenos Aires, Argentina
-                </p> -->
       </div>
 
       <hr />
-
-      <div class="terms-section" id="contact-us">
-        <h2>Contact Us</h2>
-        <ul>
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:support@linguatech.com">support@linguatech.com</a
-            ><br />
-            <em
-              >We usually reply within <strong
-                >24 hours (Monday – Friday)</strong
-              >.</em
-            >
-          </li>
-        </ul>
-      </div>
 
       <div class="terms-section" id="frequently-asked-questions">
         <h2>Frequently Asked Questions</h2>
 
         <div class="faq-accordion">
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-using-lingualoop">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-using-lingualoop"
+            >
               <div class="faq-question-text">
                 <span class="faq-symbol">📱</span>
                 Using LinguaLoop
@@ -61,34 +43,36 @@ import Layout from "../../layouts/Layout.astro";
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div id="faq-using-lingualoop" class="faq-answer" hidden>
-              <p><strong>What languages are available?</strong></p>
+              <h3 id="languages-available">What languages are available?</h3>
               <p>
                 Currently, we offer <strong>English</strong> and <strong
                   >Spanish</strong
                 >.
               </p>
 
-              <p><strong>How to change the language?</strong></p>
+              <h3 id="change-language">How to change the language?</h3>
               <p>
                 Tap the flag icon in the top left corner of the app. Select the
                 language you want to use.
               </p>
 
-              <p><strong>What are dictation activities for?</strong></p>
+              <h3 id="dictation-activities">
+                What are dictation activities for?
+              </h3>
               <p>
                 Dictation activities are designed to help you improve your
                 listening skills. You will hear a sentence or phrase and then
                 choose the correct word from a randomized list of words.
               </p>
 
-              <p><strong>What are quiz activities for?</strong></p>
+              <h3 id="quiz-activities">What are quiz activities for?</h3>
               <p>
                 Quiz activities are designed to help you improve your listening
                 skills. You will hear a short video fragment and then choose the
                 correct answer from a randomized list of options.
               </p>
 
-              <p><strong>How to create an account?</strong></p>
+              <h3 id="create-account">How to create an account?</h3>
               <p>
                 You can directly download the LinguaLoop app from the App Store.
                 Upon opening the app, click <strong>Get Started</strong> and follow
@@ -99,11 +83,13 @@ import Layout from "../../layouts/Layout.astro";
                 enhancing your listening skills.
               </p>
 
-              <p><strong>What devices are supported?</strong></p>
+              <h3 id="supported-devices">What devices are supported?</h3>
               <p>LinguaLoop is supported on iOS 18.0 and later.</p>
               <p>Android is not supported yet. We're working on it.</p>
 
-              <p><strong>How does LinguaLoop curate the content?</strong></p>
+              <h3 id="curate-content">
+                How does LinguaLoop curate the content?
+              </h3>
               <p>
                 We use a combination of AI and human curation to create the
                 content. It's important to note that all content is reviewed by
@@ -113,7 +99,11 @@ import Layout from "../../layouts/Layout.astro";
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-subscriptions-billing">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-subscriptions-billing"
+            >
               <div class="faq-question-text">
                 <span class="faq-symbol">💳</span>
                 Subscriptions & Billing
@@ -121,7 +111,9 @@ import Layout from "../../layouts/Layout.astro";
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div id="faq-subscriptions-billing" class="faq-answer" hidden>
-              <p><strong>How to check my membership status?</strong></p>
+              <h3 id="check-membership-status">
+                How to check my membership status?
+              </h3>
               <p>
                 To check your membership status, tap the <strong>Profile</strong
                 > icon in the bottom right corner of the app.
@@ -144,17 +136,37 @@ import Layout from "../../layouts/Layout.astro";
                 per mode (dictation and quiz) and language.
               </p>
 
-              <p><strong>How do I cancel my subscription?</strong></p>
+              <h3 id="cancel-subscription">How do I cancel my subscription?</h3>
               <p>
-                Open the app, go to Profile → Setting → Manage Subscription →
-                Manage Subscription → Cancel Subscription.
+                Open the app, go to <em
+                  >Profile → Settings → Subscription → Manage Subscription →
+                  Cancel Subscription</em
+                >.
               </p>
               <p>Your access lasts until the current billing period ends.</p>
+
+              <h3 id="plans">Plans &amp; Prices</h3>
+
+              <p class="price-note" aria-label="App Store price information">
+                LinguaLoop offers a monthly and an annual subscription plan. The
+                exact price appears in the App Store purchase sheet before you
+                confirm payment.
+              </p>
+
+              <p class="price-disclaimer" aria-label="Price disclaimer">
+                <strong>Disclaimer:</strong>
+                Prices may vary by region and are determined by the App Store. Subscriptions
+                renew automatically unless cancelled in the App Store settings.
+              </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-account-sign-in">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-account-sign-in"
+            >
               <div class="faq-question-text">
                 <span class="faq-symbol">👤</span>
                 Account & Sign-In
@@ -162,8 +174,8 @@ import Layout from "../../layouts/Layout.astro";
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div id="faq-account-sign-in" class="faq-answer" hidden>
+              <h3 id="sign-in-with-apple">Can I sign in with Apple?</h3>
               <p>
-                <strong>Can I sign in with Apple?</strong><br />
                 Yes. Tap <strong>Continue with Apple</strong> on the login screen.
                 Email login is available only for beta testers.
               </p>
@@ -175,10 +187,11 @@ import Layout from "../../layouts/Layout.astro";
               class="faq-question"
               aria-expanded="false"
               aria-controls="faq-data-privacy"
-              >
-
+            >
               <div class="faq-question-text">
-                <span class="faq-symbol" role="img" aria-label="Data & Privacy">🔒</span>
+                <span class="faq-symbol" role="img" aria-label="Data & Privacy"
+                  >🔒</span
+                >
                 Data &amp; Privacy
               </div>
 
@@ -186,17 +199,24 @@ import Layout from "../../layouts/Layout.astro";
             </button>
 
             <div id="faq-data-privacy" class="faq-answer" hidden>
+              <h3 id="data-collected">What data do you collect?</h3>
               <p>
-                <strong>What data do you collect?</strong><br />
-                We store your progress, preferred language, and basic device analytics.
-                We <strong>never</strong> store raw audio or personal messages.
-                See our <a href="/lingualoop/privacy-policy">Privacy&nbsp;Policy</a> for full details.
+                We store your progress, preferred language, and basic device
+                analytics. We <strong>never</strong> store raw audio or personal
+                messages. See our <a href="/lingualoop/privacy-policy"
+                  >Privacy&nbsp;Policy</a
+                >
+                for full details.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-troubleshooting">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-troubleshooting"
+            >
               <div class="faq-question-text">
                 <span class="faq-symbol">🔧</span>
                 Troubleshooting
@@ -204,13 +224,13 @@ import Layout from "../../layouts/Layout.astro";
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div id="faq-troubleshooting" class="faq-answer" hidden>
+              <h3 id="minimum-version">
+                Is there a minimum required App & OS version to use LinguaLoop
+                on mobile?
+              </h3>
               <p>
-                <strong
-                  >Is there a minimum required App & OS version to use
-                  LinguaLoop on mobile?</strong
-                ><br />
-                To see the minimum app and OS version, open the App Store listing
-                and scroll to <strong>Compatibility</strong>.
+                To see the minimum app and OS version, open the App Store
+                listing and scroll to <strong>Compatibility</strong>.
               </p>
               <p>
                 As always, we strongly encourage you to update the LinguaLoop
@@ -219,39 +239,53 @@ import Layout from "../../layouts/Layout.astro";
                 after an app update, please ensure to also update your OS
                 version.
               </p>
+              <h3 id="buffering-video">
+                The video keeps buffering. What can I do?
+              </h3>
               <p>
-                <strong>The video keeps buffering. What can I do?</strong><br />
-                First, check your network connection. If the problem persists, close
-                the activity and reopen it.
+                First, check your network connection. If the problem persists,
+                close the activity and reopen it.
               </p>
+              <h3 id="poorly-worded-questions">
+                I found poorly worded questions in Quiz activities. What can I
+                do?
+              </h3>
               <p>
-                <strong
-                  >I found poorly worded questions in Quiz activities. What can
-                  I do?</strong
-                ><br />
-                Tap the <button class="report-issue" aria-label="Report issue" type="button">
+                Tap the <button
+                  class="report-issue"
+                  aria-label="Report issue"
+                  type="button"
+                >
                   <span role="img" aria-label="Report issue">⚠️</span>
                 </button> Report Issue button to report the issue. We'll review it
-                and fix it as soon as possible. If you're not logged in, you'll be asked to log in first.
+                and fix it as soon as possible. If you're not logged in, you'll be
+                asked to log in first.
               </p>
+              <h3 id="dictation-video-fragments">
+                I found dictation activities where video fragments don't match
+                the audio properly. What can I do?
+              </h3>
               <p>
-                <strong
-                  >I found dictation activities where video fragments don't
-                  match the audio properly. What can I do?</strong
-                ><br />
-                Tap the <button class="report-issue" aria-label="Report issue" type="button">
+                Tap the <button
+                  class="report-issue"
+                  aria-label="Report issue"
+                  type="button"
+                >
                   <span role="img" aria-label="Report issue">⚠️</span>
                 </button> Report Issue button to report the issue. We'll review it
                 and fix it as soon as possible.
               </p>
+              <h3 id="translate-text">
+                The button for translating the text in the dictation activity
+                doesn't work. What can I do?
+              </h3>
               <p>
-                <strong
-                  >The button for translating the text in the dictation activity
-                  doesn't work. What can I do?</strong
-                ><br />
-                Sometimes the first translation request needs an app relaunch when
-                it's used for the first time. If the problem persists, tap the <button
-                  class="report-issue" aria-label="Report issue" type="button"
+                Sometimes the first translation request needs an app relaunch
+                when it's used for the first time. If the problem persists, tap
+                the <button
+                  class="report-issue"
+                  aria-label="Report issue"
+                  type="button"
                 >
                   <span role="img" aria-label="Report issue">⚠️</span>
                 </button>
@@ -261,6 +295,33 @@ import Layout from "../../layouts/Layout.astro";
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="terms-section" id="contact-us">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:support@linguatech.com">support@linguatech.com</a
+            ><br />
+            <em
+              >We usually reply within <strong
+                >24 hours (Monday – Friday)</strong
+              >.</em
+            >
+          </li>
+
+          <li>
+            <strong>Phone:</strong> +54&nbsp;11&nbsp;6283-1134<br />
+            <em>(Mon–Fri 09:00–17:00 ART / 12:00–20:00 UTC)</em>
+          </li>
+
+          <li>
+            <strong>Postal address:</strong><br />
+            Santa Marta 1906, Buenos Aires, C1650<br />
+            Argentina
+          </li>
+        </ul>
       </div>
 
       <div class="terms-section" id="legal-links">
@@ -534,8 +595,8 @@ import Layout from "../../layouts/Layout.astro";
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Set aria-hidden on FAQ icons to prevent screen readers from announcing them
-    document.querySelectorAll('.faq-icon').forEach(icon => {
-      icon.setAttribute('aria-hidden', 'true');
+    document.querySelectorAll(".faq-icon").forEach((icon) => {
+      icon.setAttribute("aria-hidden", "true");
     });
 
     const faqQuestions = document.querySelectorAll(".faq-question");
@@ -544,14 +605,18 @@ import Layout from "../../layouts/Layout.astro";
       question.addEventListener("click", () => {
         const isExpanded = question.getAttribute("aria-expanded") === "true";
         const controlsId = question.getAttribute("aria-controls");
-        const answer = controlsId ? document.getElementById(controlsId) : question.nextElementSibling;
+        const answer = controlsId
+          ? document.getElementById(controlsId)
+          : question.nextElementSibling;
 
         // Close all other FAQ items
         faqQuestions.forEach((otherQuestion) => {
           if (otherQuestion !== question) {
             otherQuestion.setAttribute("aria-expanded", "false");
             const otherControlsId = otherQuestion.getAttribute("aria-controls");
-            const otherAnswer = otherControlsId ? document.getElementById(otherControlsId) : otherQuestion.nextElementSibling;
+            const otherAnswer = otherControlsId
+              ? document.getElementById(otherControlsId)
+              : otherQuestion.nextElementSibling;
             if (otherAnswer) {
               otherAnswer.classList.remove("expanded");
               (otherAnswer as HTMLElement).hidden = true;
