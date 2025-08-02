@@ -37,10 +37,12 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
 
-      <div class="coming-soon">
-        <h3>Coming Soon to the App Store</h3>
-        <p>Be the first to experience LinguaLoop. Launching soon!</p>
-        <p class="download-placeholder">🔗 Download link coming soon</p>
+      <div class="download-section">
+        <h3>Download LinguaLoop</h3>
+        <p>Available now on the App Store!</p>
+        <a href="https://apps.apple.com/app/id6746905239" class="download-link" target="_blank" rel="noopener noreferrer">
+          <img src="/app-store-button.png" alt="Download on the App Store" class="app-store-button">
+        </a>
       </div>
 
       <footer>
@@ -122,13 +124,18 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .download-link {
-    color: #3b82f6;
+    display: inline-block;
     text-decoration: none;
-    font-weight: 600;
   }
 
-  .download-link:hover {
-    text-decoration: underline;
+  .app-store-button {
+    height: 60px;
+    width: auto;
+    transition: transform 0.2s ease;
+  }
+
+  .app-store-button:hover {
+    transform: scale(1.05);
   }
 
   footer {
