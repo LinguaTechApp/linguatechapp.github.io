@@ -1,0 +1,467 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="terms-container">
+    <div class="terms-content">
+      <h1>Privacy Policy</h1>
+
+      <div class="last-updated">Last updated: April 2026</div>
+
+      <div class="intro">
+        <p>
+          At LinguaTech, we care deeply about your privacy. This Privacy Policy
+          explains how we collect, use, and protect your personal information in
+          connection with the Fluo mobile application ("App"). By using
+          Fluo, you agree to the terms of this Privacy Policy. Terms used
+          here that are not defined have the meaning given in our <a
+            href="/fluo/terms-of-use">Terms of Service</a
+          >.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>1. Information We Collect</h2>
+        <p>We collect the following types of personal information:</p>
+        <ul>
+          <li>
+            <strong>Name and Email Address:</strong> Collected through Apple Sign-In
+            or Google Sign-In to create and manage your account.
+          </li>
+          <li>
+            <strong>User ID:</strong> A unique identifier associated with your account,
+            used internally to manage your profile and app data.
+          </li>
+          <li>
+            <strong>Purchase History:</strong> Subscription data (monthly or annual),
+            including plan type and status, used to manage access to paid content.
+          </li>
+          <li>
+            <strong>Gameplay Content:</strong> Responses generated during language
+            activities (e.g., dictation, quizzes, or AI conversations) are stored and
+            analyzed to improve learning outcomes.
+          </li>
+          <li>
+            <strong>Voice and Audio Data:</strong> Voice recordings submitted through
+            the app are sent to our backend for transcription via an edge function.
+            Temporary audio files are deleted from your device after processing.
+          </li>
+          <li>
+            <strong>Product Interaction:</strong> Usage events (e.g., app opened,
+            activity completed) are collected to understand general app usage and
+            improve the experience.
+          </li>
+          <li>
+            <strong>Customer Support:</strong> If you contact us, we store any details
+            you provide in order to respond and assist you effectively.
+          </li>
+          <li>
+            <strong>Device Identifier:</strong> An Identifier for Vendor (IDFV) — or
+            a UUID fallback — stored in on-device preferences and sent to Supabase
+            and Firebase for analytics and account association.
+          </li>
+          <li>
+            <strong>Coarse Location:</strong> Country derived from your device locale
+            and timezone. We do not collect GPS or precise location data.
+          </li>
+          <li>
+            <strong>Analytics:</strong> Device model, OS version, and usage
+            performance metrics collected through Firebase Analytics to measure
+            feature adoption and improve the experience.
+          </li>
+        </ul>
+        <p>
+          We do not collect passwords or payment card data. Subscription
+          payments are processed via Apple (App Store) or Google (Google Play).
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>2. How We Use Your Information</h2>
+        <p>We use your personal data to:</p>
+        <ul>
+          <li>Authenticate and manage your user account</li>
+          <li>Enable access to free or premium content</li>
+          <li>
+            Analyze usage patterns to improve features and content difficulty
+          </li>
+          <li>
+            Process user content (such as chat messages and audio recordings)
+            through AI service providers to enable language learning features
+            including conversation practice, transcription, and feedback
+          </li>
+          <li>Provide customer support</li>
+          <li>Monitor technical performance and usage trends</li>
+        </ul>
+        <p>We do not use your data for marketing or advertising purposes.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>3. Advertising and Tracking</h2>
+        <p>
+          We do not use your personal information for advertising, tracking, or
+          data brokerage. We do not engage in cross-app tracking or share user
+          data with advertising platforms.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>4. How We Collect Information</h2>
+        <p>We collect information:</p>
+        <ul>
+          <li>Directly from you when you create an account or contact us</li>
+          <li>Automatically through the app (e.g., device and usage data)</li>
+          <li>
+            From third-party platforms (e.g., Apple, Google) when authorized by you
+          </li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>5. Third-Party Services</h2>
+        <p>
+          We use Supabase as our backend service provider. Supabase handles user
+          authentication, data storage, and analytics infrastructure. All user
+          data is securely stored on Supabase servers.
+        </p>
+        <p>
+          User content — including chat messages and audio recordings — is sent
+          to our backend edge functions, which act as a secure proxy to OpenAI
+          and Google Gemini. These providers process the data solely to deliver
+          the requested language learning features, in accordance with their
+          respective data processing agreements.
+        </p>
+        <p>Other service providers:</p>
+        <ul>
+          <li><strong>Firebase</strong> (Google LLC) — analytics.</li>
+          <li><strong>YouTube API</strong> (Google LLC) — fetches public video metadata; no personal data is sent.</li>
+          <li><strong>OpenAI</strong> (OpenAI, L.L.C.) — processes user text and audio for AI conversations, transcription (Whisper), and speech synthesis (TTS).</li>
+          <li><strong>Google Gemini</strong> (Google LLC) — processes user text for AI conversations and feedback.</li>
+          <li><strong>Singular</strong> (Singular Labs, Inc.) — mobile attribution and analytics.</li>
+          <li><strong>Inworld</strong> (Inworld AI, Inc.) — text-to-speech provider.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>6. Sharing Your Information</h2>
+        <p>We do not sell or rent your personal data. We only share it:</p>
+        <ul>
+          <li>
+            With service providers under strict data processing agreements
+            (e.g., for analytics or infrastructure hosting)
+          </li>
+          <li>When required by law or in legal proceedings</li>
+          <li>With your consent or at your request</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>7. Data Retention</h2>
+        <p>
+          We retain your personal data only as long as necessary to provide the
+          service or as required by applicable law. We initiate deletion of your
+          personal data upon account deletion. This process completes within
+          30 days unless legal retention obligations apply.
+        </p>
+        <p>
+          You may delete your account at any time from <em>Profile › Settings › Delete Account</em> inside the app.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>8. Your Rights</h2>
+
+        <p>
+          Depending on where you live, you may have some or all of the following
+          rights with respect to your personal data:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Access</strong> – obtain confirmation that we process your data
+            and receive a copy.
+          </li>
+          <li>
+            <strong>Rectification</strong> – correct inaccurate or incomplete data.
+          </li>
+          <li>
+            <strong>Erasure</strong> – request deletion ("right to be forgotten")
+            in certain circumstances.
+          </li>
+          <li>
+            <strong>Restriction</strong> – ask us to pause processing while we verify
+            accuracy or our legal basis.
+          </li>
+          <li>
+            <strong>Portability</strong> – receive your data in a commonly used,
+            machine-readable format and transmit it to another controller.
+          </li>
+          <li>
+            <strong>Objection</strong> – object to processing based on legitimate
+            interests or for direct marketing.
+          </li>
+        </ul>
+
+        <p>
+          You also have the right to lodge a complaint with your local
+          data-protection supervisory authority if you believe we have not
+          handled your request properly. A list of EU authorities is available
+          <a
+            href="https://edpb.europa.eu/about-edpb/about-edpb/members_en"
+            target="_blank"
+            rel="noopener">here</a
+          >.
+        </p>
+
+        <p>
+          If you are a California resident, you may have additional rights under
+          the California Privacy Rights Act (CPRA).
+        </p>
+
+        <p>
+          If you are a resident of Brazil, you may have additional rights under
+          the Lei Geral de Proteção de Dados (LGPD).
+        </p>
+
+        <p>
+          If you are a resident of Argentina, you may have additional rights
+          under Ley 25.326 (Personal Data Protection Law).
+        </p>
+
+        <p>
+          To exercise any of these rights, please email us at
+          <a href="mailto:support@linguatech.app">support@linguatech.app</a>.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>9. Security Measures</h2>
+        <p>
+          We rely on Supabase, our backend infrastructure provider, to implement
+          industry-standard security measures including secure server
+          infrastructure, encrypted data transmission, and access controls.
+          While we rely on trusted third-party providers and follow best
+          practices, no method of transmission or storage is 100% secure.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>10. Children's Privacy</h2>
+
+        <p>
+          You must be <strong>13 years of age or older</strong>—or at least the
+          minimum age required in your country—to use Fluo. If you are
+          between 13 and 17, you may only use the app with the permission and
+          supervision of a parent or legal guardian.
+        </p>
+
+        <p>
+          We do not knowingly collect personal data from anyone under 13. If we
+          discover that such information has been provided, we will delete it
+          promptly and may suspend the associated account.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>11. International Users</h2>
+        <p>
+          Your data is processed and stored in secure data centers operated by
+          our service providers, including Supabase, which may be located in
+          jurisdictions outside of your country of residence. These locations
+          may not have the same data protection laws as your home country. By
+          using Fluo, you consent to the transfer of your data to these
+          jurisdictions.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>12. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy to reflect changes in our practices
+          or legal obligations. We will notify you of material changes through
+          the App or by other means. The date of the last update is posted at
+          the top of this document.
+        </p>
+      </div>
+
+      <div class="terms-section" id="contact-us">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or concerns about this Privacy Policy,
+          please contact us:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:support@linguatech.app">support@linguatech.app</a
+            ><br />
+            <em
+              >We usually reply within <strong
+                >24 hours (Monday – Friday)</strong
+              >.</em
+            >
+          </li>
+
+<!--           <li>
+            <strong>Phone:</strong> +54&nbsp;11&nbsp;6283-1134<br />
+            <em>(Mon–Fri 09:00–17:00 ART / 12:00–20:00 UTC)</em>
+          </li>
+
+          <li>
+            <strong>Postal address:</strong><br />
+            Santa Marta 1906, Buenos Aires, C1650<br />
+            Argentina
+          </li> -->
+        </ul>
+      </div>
+
+      <p
+        style="text-align: center; margin-top: 1rem; font-style: italic; color: #6b7280;"
+      >
+        We are committed to protecting your privacy and ensuring a safe user
+        experience.
+      </p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .terms-content {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .last-updated {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .intro {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+    margin-bottom: 2rem;
+  }
+
+  .intro p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+  }
+
+  .terms-section {
+    margin-bottom: 2rem;
+  }
+
+  .terms-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+  }
+
+  .terms-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0;
+  }
+
+  .terms-section ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .terms-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0.25rem;
+  }
+
+  .terms-section strong {
+    font-weight: 600;
+    color: #111827;
+  }
+
+  .contact-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e5e7eb;
+  }
+
+  .contact-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-info {
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }
+
+  .contact-info p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact-info strong {
+    font-weight: 600;
+    color: #111827;
+  }
+
+  a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .terms-container {
+      margin: 1rem;
+      padding: 1.5rem 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .terms-section h2 {
+      font-size: 1.1rem;
+    }
+  }
+</style>
