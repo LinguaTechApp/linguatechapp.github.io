@@ -61,11 +61,7 @@ import Layout from "../../layouts/Layout.astro";
             a UUID fallback — stored in on-device preferences and sent to Supabase
             and Firebase for analytics and account association.
           </li>
-          <li>
-            <strong>Coarse Location:</strong> Country derived from your device locale
-            and timezone. We do not collect GPS or precise location data.
-          </li>
-          <li>
+<li>
             <strong>Analytics:</strong> Device model, OS version, and usage
             performance metrics collected through Firebase Analytics to measure
             feature adoption and improve the experience.
@@ -135,11 +131,14 @@ import Layout from "../../layouts/Layout.astro";
         <p>Other service providers:</p>
         <ul>
           <li><strong>Firebase</strong> (Google LLC) — analytics.</li>
+          <li><strong>Firebase Crashlytics</strong> (Google LLC) — crash reporting for app stability monitoring.</li>
           <li><strong>YouTube API</strong> (Google LLC) — fetches public video metadata; no personal data is sent.</li>
           <li><strong>OpenAI</strong> (OpenAI, L.L.C.) — processes user text and audio for AI conversations, transcription (Whisper), and speech synthesis (TTS).</li>
+          <li><strong>AssemblyAI</strong> (AssemblyAI, Inc.) — processes audio for speech recognition and transcription.</li>
           <li><strong>Google Gemini</strong> (Google LLC) — processes user text for AI conversations and feedback.</li>
           <li><strong>Singular</strong> (Singular Labs, Inc.) — mobile attribution and analytics.</li>
           <li><strong>Inworld</strong> (Inworld AI, Inc.) — text-to-speech provider.</li>
+          <li><strong>LangSmith</strong> (LangChain, Inc.) — observability infrastructure for AI features; user identifiers and sensitive content are sanitized before any data is sent.</li>
         </ul>
       </div>
 
