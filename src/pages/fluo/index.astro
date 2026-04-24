@@ -1,0 +1,143 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="container">
+    <div class="content">
+      <h1>Fluo: Learn English</h1>
+      <p>
+        Master English as a Spanish or Portuguese speaker with AI-powered
+        conversations, guided lessons, and immersive listening practice.
+      </p>
+
+      <div class="features">
+        <div class="feature-item">
+          <h3>🗣️ Speaking Module</h3>
+          <p>
+            Practice pronunciation and fluency through AI role-play
+            conversations. Talk with an AI partner in realistic scenarios and
+            get instant feedback on your responses.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h3>📚 Learning Path</h3>
+          <p>
+            Structured grammar and vocabulary lessons plus an AI Tutor chat for
+            personalized guidance. Build a solid foundation step by step.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h3>🎧 Listening Practice</h3>
+          <p>
+            Train your ear with dictation and quiz activities based on real
+            video content. Sharpen comprehension and accuracy at your own pace.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h3>🌎 For Spanish & Portuguese Speakers</h3>
+          <p>
+            Explanations and lesson design tailored to native Spanish and
+            Portuguese speakers, so you learn faster from what you already know.
+          </p>
+        </div>
+      </div>
+
+      <div class="coming-soon">
+        <h3>Download Fluo</h3>
+        <p>Coming soon to the App Store. Android (Google Play) — coming soon.</p>
+      </div>
+
+      <footer>
+        <a href="/fluo/support">Support</a>
+        <a href="/fluo/privacy-policy">Privacy Policy</a>
+        <a href="/fluo/terms-of-use">Terms of Service</a>
+      </footer>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+  }
+
+  .content {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+  }
+
+  .content p {
+    color: #7a7a7a;
+    font-size: 1.25rem;
+  }
+
+  .features {
+    text-align: left;
+    margin: 2rem 0;
+  }
+
+  .feature-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+  }
+
+  .feature-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: #374151;
+    font-size: 1.25rem;
+  }
+
+  .feature-item p {
+    margin: 0;
+    color: #7a7a7a;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .coming-soon {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #eff6ff;
+    border-radius: 8px;
+    border: 2px solid #3b82f6;
+  }
+
+  .coming-soon h3 {
+    margin: 0 0 0.5rem 0;
+    color: #1e40af;
+    font-size: 1.25rem;
+  }
+
+  .coming-soon p {
+    margin: 0.5rem 0;
+    color: #374151;
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  footer a {
+    color: #7a7a7a;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
