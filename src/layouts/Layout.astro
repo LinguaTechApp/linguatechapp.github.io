@@ -1,3 +1,8 @@
+---
+const isFluo = Astro.url.pathname.startsWith('/fluo/');
+const privacyHref = isFluo ? '/fluo/privacy-policy' : '/lingualoop/privacy-policy';
+const termsHref   = isFluo ? '/fluo/terms-of-use'   : '/lingualoop/terms-of-use';
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -47,7 +52,7 @@
 
 		<footer class="footer">
 			<div class="footer-content">
-				<p>© 2025 LinguaTech – All rights reserved. - <a href="/lingualoop/privacy-policy">Privacy Policy</a> - <a href="/lingualoop/terms-of-use">Terms of Service</a></p>
+				<p>© 2026 LinguaTech – All rights reserved. - <a href={privacyHref}>Privacy Policy</a> - <a href={termsHref}>Terms of Service</a></p>
 			</div>
 		</footer>
 	</body>
