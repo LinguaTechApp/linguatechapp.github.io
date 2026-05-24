@@ -1,0 +1,265 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="terms-container">
+    <div class="terms-content">
+      <h1>Delete your LinguaLoop account</h1>
+
+      <div class="intro">
+        <p>
+          You can permanently delete your LinguaLoop account and all associated
+          data at any time. Follow the steps below to request deletion.
+        </p>
+      </div>
+
+      <div class="quick-links">
+        <p><strong>Quick links:</strong></p>
+        <p>
+          <a href="#delete-in-app">Delete from inside the app</a> ·
+          <a href="#delete-by-email">Delete by email</a> ·
+          <a href="#what-gets-deleted">What gets deleted</a> ·
+          <a href="#what-is-retained">What is retained</a> ·
+          <a href="#subscription-cancellation">Subscription cancellation</a>
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="terms-section" id="delete-in-app">
+        <h2>1. Delete from inside the app (preferred)</h2>
+        <ol>
+          <li>Open LinguaLoop on your device.</li>
+          <li>Go to <strong>Profile → Settings → Manage account</strong>.</li>
+          <li>Tap <strong>"Delete account"</strong>.</li>
+          <li>
+            Confirm. Your account and all associated data will be permanently
+            deleted within <strong>30 days</strong>.
+          </li>
+        </ol>
+      </div>
+
+      <div class="terms-section" id="delete-by-email">
+        <h2>2. Delete by email (alternative)</h2>
+        <ul>
+          <li>
+            If you can't access the app, send an email to <a
+              href="mailto:support@linguatech.app">support@linguatech.app</a
+            > from the email address associated with your LinguaLoop account.
+          </li>
+          <li>Subject: <strong>"Delete my account"</strong>.</li>
+          <li>
+            We will verify ownership and process the deletion within <strong
+              >30 days</strong
+            >.
+          </li>
+        </ul>
+      </div>
+
+      <div class="terms-section" id="what-gets-deleted">
+        <h2>3. What gets deleted</h2>
+        <ul>
+          <li>
+            User profile (name, email, native language, target level,
+            preferences).
+          </li>
+          <li>
+            Learning progress (completed lessons, exercise history, streaks,
+            stats).
+          </li>
+          <li>
+            Saved phrases, chat history, and Speaking session transcripts.
+          </li>
+          <li>Reminder configuration and notification preferences.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section" id="what-is-retained">
+        <h2>4. What is retained</h2>
+        <ul>
+          <li>
+            Anonymized analytics events used for product improvement (cannot be
+            linked back to the deleted account).
+          </li>
+          <li>
+            Billing/transaction records required by tax and consumer protection
+            law in the user's jurisdiction (retained for the legally mandated
+            period, after which they are also deleted).
+          </li>
+        </ul>
+      </div>
+
+      <div class="terms-section" id="subscription-cancellation">
+        <h2>5. Subscription cancellation</h2>
+        <p>
+          Deleting your account does <strong>NOT</strong> cancel active subscriptions.
+          You must cancel your subscription separately through Google Play before
+          deleting your account, otherwise you'll continue to be charged.
+        </p>
+        <p>
+          Open the <strong>Google Play</strong> app → <strong>Profile</strong> →
+          <strong>Payments &amp; subscriptions</strong> → <strong
+            >Subscriptions</strong
+          > → <strong>LinguaLoop</strong> → <strong>Cancel subscription</strong
+          >.
+        </p>
+      </div>
+
+      <div class="terms-section" id="legal-links">
+        <h2>Legal Links</h2>
+        <p>
+          <a href="/lingualoop/terms-of-use">Terms of Service</a> •
+          <a href="/lingualoop/privacy-policy">Privacy Policy</a> •
+          <a href="/lingualoop/support">Support</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .terms-content {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .intro {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+    margin-bottom: 2rem;
+  }
+
+  .intro p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+  }
+
+  .quick-links {
+    margin-bottom: 2rem;
+  }
+
+  .quick-links p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+
+  .quick-links strong {
+    font-weight: 600;
+    color: #111827;
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid #e5e7eb;
+    margin: 2rem 0;
+  }
+
+  .terms-section {
+    margin-bottom: 2rem;
+    scroll-margin-top: 100px;
+  }
+
+  .terms-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+  }
+
+  .terms-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .terms-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 1rem;
+  }
+
+  .terms-section ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .terms-section ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .terms-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+
+  .terms-section strong {
+    font-weight: 600;
+    color: #111827;
+  }
+
+  .terms-section em {
+    font-style: italic;
+    color: #6b7280;
+  }
+
+  a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .terms-container {
+      margin: 1rem;
+      padding: 1.5rem 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .terms-section h2 {
+      font-size: 1.1rem;
+    }
+
+    .terms-section h3 {
+      font-size: 1rem;
+    }
+  }
+</style>
